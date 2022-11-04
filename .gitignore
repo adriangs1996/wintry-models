@@ -582,5 +582,7 @@ bh_unicode_properties.cache
 # https://packagecontrol.io/packages/sublime-github
 GitHub.sublime-settings
 
-!/UNKNOWN.egg-info/
-!/reqlib-metadata/
+UNKNOWN.egg-info/
+reqlib-metadata/
+dist/
+wintrymodels.egg-info/
