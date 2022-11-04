@@ -1,5 +1,19 @@
 # WINTRY INTEGRATION FOR SQLMODEL
 
+These functionalities were originaly part of [wintry](https://github.com/adriangs1996/wintry), but
+were moved to a separate package so it is an opt-in. [wintry](https://github.com/adriangs1996/wintry)
+is really extensible, so, more features like this will be added in the future.
+
+## What is this
+
+wintry-models is just a way of ease the use of SQLModel with wintry. It is exploiting wintry's
+Dependency Injection System to provide Request Bound SqlAlchemy Session, so changes to entities
+can be tracked across multiple functions, and dependencies got declared in a declarative way.
+
+It is doable to acomplish the same with pure FastAPI, but is not trivial, besides, the integration
+with "Controllers" is a real Nightmare. This way, we promote a separation of concerns and a way to
+easily integrate an ORM into a web framework (like happens .NET).
+
 ## Usage
 
 Register the DataContext service and wire up the engine creation
