@@ -1,0 +1,28 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wintrymodels"
+version = "1.0.0"
+description = "Integrates SQLModel with wintry framework"
+readme = "README.md"
+authors = [{ name = "Adrian Gonzalez", email = "adriangonzalezsanchez1996@gmail.com" }]
+license = { file = "LICENSE" }
+
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+
+keywords = ["wintry", "orm", "sql"]
+dependencies = [
+    "sqlmodel",
+    "wintry",
+    'tomli; python_version < "3.11"'
+]
+
+requires-python = ">= 3.10"
